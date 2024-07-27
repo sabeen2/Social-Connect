@@ -68,7 +68,7 @@ const Navbar = () => {
       <div className=" hidden xl:flex items-center  ">
         <input
           type="text"
-          className="bg-transparent outline-[1px] bg-slate-200 p-2 rounded-lg  "
+          className="bg-transparent outline-none bg-blue-50 p-2 rounded-lg  "
           placeholder="Search"
         />
         <Image

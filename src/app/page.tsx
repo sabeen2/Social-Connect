@@ -6,13 +6,13 @@ import Stories from "@/components/Stories";
 
 const Homepage = () => {
   return (
-    <div className="flex justify-between  ">
+    <div className="flex pt-6 gap-6">
       <div className="hidden lg:block w-[20%]">
         {" "}
         <LeftMenu />{" "}
       </div>
       <div className="w-full lg:w-[70%] xl:w-[50%] ">
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-6">
           <Stories />
           <AddPost />
           <Feed />
