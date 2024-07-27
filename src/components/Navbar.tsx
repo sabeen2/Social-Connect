@@ -30,19 +30,19 @@ const navItems = [
     img: "/groups.png",
     alt: "Groups Image",
   },
-  // {
-  //   name: "Stories",
-  //   link: "/stories",
-  //   img: "/stories.png",
-  //   alt: "Stories Image",
-  // },
+  {
+    name: "Stories",
+    link: "/stories",
+    img: "/stories.png",
+    alt: "Stories Image",
+  },
 ];
 
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between h-24">
       {/* left */}
-      <div className=" md:hidden lg:block w-[20%]">
+      <div className=" md:hidden lg:block sm:w-[20%] w-[50%]">
         <Link href={"/"} className="font-bold text-xl text-blue-600">
           Social Connect
         </Link>
@@ -65,8 +65,22 @@ const Navbar = () => {
           </div>
         ))}
       </div>
+      <div className=" hidden xl:flex items-center  ">
+        <input
+          type="text"
+          className="bg-transparent outline-[1px] bg-slate-200 p-2 rounded-lg  "
+          placeholder="Search"
+        />
+        <Image
+          src={"/search.png"}
+          alt="search"
+          width={14}
+          height={14}
+          className="ml-2  w-6 h-6"
+        />
+      </div>
       {/* right */}
-      <div className=" w-[30%] flex items-center gap-4 xl:gap-8 justify-end">
+      <div className=" sm:w-[30%] flex items-center gap-4 xl:gap-8 justify-end">
         <ClerkLoading>
           <div role="status">
             <svg
@@ -90,32 +104,34 @@ const Navbar = () => {
         </ClerkLoading>
         <ClerkLoaded>
           <SignedIn>
-            <div className="cursor-pointer">
-              <Image
-                src="/people.png"
-                alt="People Image"
-                width={20}
-                height={20}
-                className="rounded-full"
-              />
-            </div>
-            <div className="cursor-pointer">
-              <Image
-                src="/messages.png"
-                alt="Messages Image"
-                width={20}
-                height={20}
-                className="rounded-full"
-              />
-            </div>
-            <div className="cursor-pointer">
-              <Image
-                src="/notifications.png"
-                alt="Notifications Image"
-                width={20}
-                height={20}
-                className="rounded-full"
-              />
+            <div className="flex sm:gap-x-6  gap-x-2 ">
+              <div className="cursor-pointer ">
+                <Image
+                  src="/people.png"
+                  alt="People Image"
+                  width={24}
+                  height={24}
+                  className="rounded-full"
+                />
+              </div>
+              <div className="cursor-pointer">
+                <Image
+                  src="/messages.png"
+                  alt="Messages Image"
+                  width={24}
+                  height={24}
+                  className="rounded-full"
+                />
+              </div>
+              <div className="cursor-pointer">
+                <Image
+                  src="/notifications.png"
+                  alt="Notifications Image"
+                  width={24}
+                  height={24}
+                  className="rounded-full"
+                />
+              </div>
             </div>
             <div className="cursor-pointer">
               <UserButton />
