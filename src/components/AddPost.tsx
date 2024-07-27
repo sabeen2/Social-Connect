@@ -31,7 +31,48 @@ const AddPost = () => {
           />
         </div>
         {/* POST OPTIONS */}
-        <div className=""></div>
+        <div className="flex  flex-wrap items-center  gap-4 mt-4 text-gray-400">
+          <div className="flex items-center  gap-2 cursor-pointer">
+            <Image
+              src={"/addimage.png"}
+              alt=""
+              width={20}
+              height={20}
+              className="w-5 h-5 cursor-pointer self-end"
+            />
+            Photo
+          </div>
+          <div className="flex items-center  gap-2 cursor-pointer">
+            <Image
+              src={"/addVideo.png"}
+              alt=""
+              width={20}
+              height={20}
+              className="w-5 h-5 cursor-pointer self-end"
+            />
+            Video
+          </div>
+          <div className="flex items-center  gap-2 cursor-pointer">
+            <Image
+              src={"/addevent.png"}
+              alt=""
+              width={20}
+              height={20}
+              className="w-5 h-5 cursor-pointer self-end"
+            />
+            Event
+          </div>
+          <div className="flex items-center  gap-2 cursor-pointer">
+            <Image
+              src={"/poll.png"}
+              alt=""
+              width={20}
+              height={20}
+              className="w-5 h-5 cursor-pointer self-end"
+            />
+            Poll
+          </div>
+        </div>
       </div>
     </div>
   );
