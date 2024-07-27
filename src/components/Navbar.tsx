@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
-import { ClerkLoaded, ClerkLoading } from "@clerk/nextjs";
+import { ClerkLoaded, ClerkLoading, UserButton } from "@clerk/nextjs";
 import {
   SignedIn,
   SignedOut,
@@ -118,7 +118,7 @@ const Navbar = () => {
               />
             </div>
             <div className="cursor-pointer">
-              <SignOutButton />
+              <UserButton />
             </div>
           </SignedIn>
           <SignedOut>
