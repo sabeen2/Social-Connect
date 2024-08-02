@@ -29,6 +29,7 @@ const AddPost = () => {
             height={20}
             className="w-5 h-5 cursor-pointer self-end"
           />
+          ``
         </div>
         {/* POST OPTIONS */}
         <div className="flex  flex-wrap items-center  gap-4 mt-4 text-gray-400">
